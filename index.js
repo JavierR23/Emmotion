@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
     const db = fire.firestore();
      
       var wholeData = []
-      db.collection('/valores').orderBy('ingreso', 'desc').get()
+      db.collection('/Valores').orderBy('fecha', 'desc').get()
       .then(snapshot => {
         snapshot.forEach(doc => {
         
@@ -36,15 +36,20 @@ app.get('/', (req, res) => {
   app.post('/insertar', (req, res)=>{
     const db = fire.firestore();
       
-      db.collection('/valores').add({
+      db.collection('/Valores').add({
        
-        usuario: req.body.usuario,
-        ingreso: new Date().toJSON()
+        estado: req.body.estado,
+        frecuencia: req.body.frecuencia,
+        temperatura: req.body.temperatura,
+        fecha: new Date().toJSON()
         
       });
       res.send({
-        usuario: req.body.usuario,
-        ingreso: new Date().toJSON(),
+      
+        estado: req.body.estado,
+        frecuencia: req.body.frecuencia,
+        temperatura: req.body.temperatura,
+        fecha: new Date().toJSON(),
         status: 'Valores insertados!'
     })
   })

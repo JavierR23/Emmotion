@@ -4,21 +4,21 @@ require('firebase/firestore');
 
 const firebaseConfig = {
   // Tu configuración de Firebase aquí
-  apiKey: "AIzaSyAowptoropo9w3UQNSpqu1YVXmoGU--c6c",
+  apiKey: "fJUCQuCOtrT0PDV05BcchdthmX6p9dgOU3f3TwAi",
 
-  authDomain: "securityblockz.firebaseapp.com",
+  authDomain: "emotionr-8ec41.firebaseapp.com",
 
-  databaseURL: "https://securityblockz-default-rtdb.firebaseio.com",
+  databaseURL: "https://emotionr-8ec41-default-rtdb.firebaseio.com/",
 
-  projectId: "securityblockz",
+  projectId: "emotionr-8ec41",
 
-  storageBucket: "securityblockz.appspot.com",
+  storageBucket: "emotionr-8ec41.appspot.com",
 
-  messagingSenderId: "280389825",
+  messagingSenderId: "700411728008",
 
-  appId: "1:280389825:web:69f72319b3cae1cc124c40",
-
-  measurementId: "G-61B2QW15L0"
+  appId: "1:700411728008:web:f58ca1c26fc03a10700f3d",
+  
+  measurementId: "G-LNT1ETWSBZ"
 };
 
 firebase.initializeApp(firebaseConfig);
